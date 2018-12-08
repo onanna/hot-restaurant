@@ -20,7 +20,7 @@ module.exports = function(app){
       res.sendFile(path.join(__dirname + '/../index.html'));
   });
   // Displays all current reservations
-      app.get("/data/data", function(req, res) {
+      app.get("/api/data", function(req, res) {
       return res.json(reservations);
       });
 };
