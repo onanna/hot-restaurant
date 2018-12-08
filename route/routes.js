@@ -18,6 +18,7 @@ module.exports = function(app){
       });
       app.get("/index.html", function (req, res) {
         res.sendFile(path.join(__dirname + '/../index.html'));
+      });
   //a USE route to home page
   app.get("/", function (req, res) {
       res.sendFile(path.join(__dirname + '/../index.html'));
@@ -35,4 +36,4 @@ module.exports = function(app){
     reservations.push(req.body)
     console.log("New DAtA", reservations)
   } )
-};
+      };
