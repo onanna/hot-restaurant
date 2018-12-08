@@ -13,7 +13,26 @@
     <script src="server.js"></script>
 </head>
 <body>
-    <h1>Hot Restaurant</h1>
-    <h2>Current Reservations and Waiting List</h2>
+        <div class="container">
+                <div class="jumbotron">
+                    <h1 class = "text-center"><i class="glyphicon glyphicon-fire"></i> Hot Restaurant </h1>
+        
+                    <hr>
+        
+                    <div> <h3 class="text-center">We only have 5 tables! Book your seat before they all are gone!
+                    </h3></div>
+                    <div class="text-center">
+                    
+                    <a href="reserve.html"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-credit-card"></i> Make Reservation</button></a>
+                    <a href="index.html"><button><i class="glyphicon glyphicon-home">    </i>     </button></a>
+                    </div>
+                </div>
+            </div>
+            <ul > 
+                <li style=" Display:inline-flex;"> <a>Clear Table</a></li>   
+               <li style=" Display:inline-flex;"> <a href="api/data">API Table Link</a></li>
+                <li style=" Display:inline-flex;"> <a href="api/data">API Wait List</a></li>
+                
+            </ul>
 </body>
 </html>
