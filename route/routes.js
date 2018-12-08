@@ -12,7 +12,7 @@ module.exports = function(app){
   });
 
     //default GET route that leads to home.html - displays home page
-    app.get("/table", function(req, res) {
+    app.get("/table.html", function(req, res) {
         res.sendFile(path.join(__dirname,"/../table.html"));
         // console.log(__dirname)
       });
