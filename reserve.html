@@ -67,7 +67,7 @@
 
             console.log(newReservation);
             
-            $.post("./data/reservations", newReservation)
+            $.post("/api/data", newReservation)
             .then(function(data) {
             console.log(data);
             alert("Adding reservation...");
