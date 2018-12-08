@@ -6,17 +6,19 @@ var reservations = require("../data/data")
 // =============================================================
 module.exports = function(app){
   //default GET route that leads to home.html - displays home page
-  app.get("/reserve", function(req, res) {
+  app.get("/reserve.html", function(req, res) {
     res.sendFile(path.join(__dirname,"/../reserve.html"));
     // console.log(__dirname)
   });
 
     //default GET route that leads to home.html - displays home page
-    app.get("/table", function(req, res) {
+    app.get("/table.html", function(req, res) {
         res.sendFile(path.join(__dirname,"/../table.html"));
         // console.log(__dirname)
       });
-
+      app.get("/index.html", function (req, res) {
+        res.sendFile(path.join(__dirname + '/../index.html'));
+      });
   //a USE route to home page
   app.get("/", function (req, res) {
       res.sendFile(path.join(__dirname + '/../index.html'));
@@ -29,6 +31,9 @@ module.exports = function(app){
     });
 
   app.post("/api/data", function (req, res) {
-      console.log(req.body)    
+
+    console.log(reservations)
+    reservations.push(req.body)
+    console.log("New DAtA", reservations)
   } )
-};
+      };

@@ -22,7 +22,7 @@
             <h3 class="text-center">Make your reservation</h3></div>
         <div class="text-center">
             <a href="table.html" ><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i> View Tables</button></a>
-            <a href="reserve.html"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-credit-card"></i> Home</button></a>
+            <a href="index.html"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-credit-card"></i> Home</button></a>
         </div>
         </div>
     </div>
@@ -65,11 +65,11 @@
                 uniqueID: $("#uniqueID").val().trim(),
             }
 
-            console.log(newReservation);
+            console.log("this new reservation will be added " + newReservation);
             
             $.post("/api/data", newReservation)
             .then(function(data) {
-            console.log(data);
+            console.log("we are in the post function of reserve.html with data = " + data);
             alert("Adding reservation...");
             });
         });
