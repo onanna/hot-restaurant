@@ -44,21 +44,35 @@
                 <div class="card-header">
                     Current Reservations
                 </div>
-                <div class="card-body">Test</div>
+                <div class="card-body"></div>
                 </div>
                     <div class="card">
                         <div class="card-header">
                             Waiting List
                         </div>
-                        <div class="card-body">TEsts</div>
+                        <div class="card-body"></div>
                     </div>
     
         </div>        
             <ul > 
-                <li style=" Display:inline-flex;"> <a>Clear Table</a></li>   
+                <li style=" Display:inline-flex;"> <a href="#" id="reset">Clear Table</a></li>   
                <li style=" Display:inline-flex;"> <a href="api/data">API Table Link</a></li>
                 <li style=" Display:inline-flex;"> <a href="api/data">API Wait List</a></li>
                 
             </ul>
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+            <script>
+        $( document ).ready(function(){
+            $( "#reset" ).click(function() {
+  alert("clearing ...");
+
+  $(".card-body").reset();
+});
+        });
+
+            </script>
+
 </body>
+
+
 </html>
