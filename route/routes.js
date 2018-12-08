@@ -1,5 +1,6 @@
 //Dependencies
 var path = require('path');
+var reservations = require("../data/data")
 
 // Routes
 // =============================================================
@@ -18,4 +19,8 @@ module.exports = function(app){
   app.get("/", function (req, res) {
       res.sendFile(path.join(__dirname + '/../index.html'));
   });
+  // Displays all current reservations
+      app.get("/api/data", function(req, res) {
+      return res.json(reservations);
+      });
 };
