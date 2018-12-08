@@ -1,5 +1,6 @@
 //Dependencies
 var path = require('path');
+var reservations = require("../data/data")
 
 // Routes
 // =============================================================
@@ -21,7 +22,13 @@ module.exports = function(app){
       res.sendFile(path.join(__dirname + '/../index.html'));
     //   console.log(__dirname)
   });
-  app.post("/data/reservations", function (req, res) {
+
+  // Displays all current reservations
+  app.get("/api/data", function(req, res) {
+    return res.json(reservations);
+    });
+
+  app.post("/api/data", function (req, res) {
       console.log(req.body)    
   } )
 };
