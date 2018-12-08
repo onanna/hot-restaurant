@@ -6,7 +6,7 @@
     <title>Tables Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />--->
     <script src="/data/data.js"></script>
     <script src="/route/routes.js"></script>
@@ -20,14 +20,40 @@
                     <hr>
         
                     <div> <h3 class="text-center">We only have 5 tables! Book your seat before they all are gone!
-                    </h3></div>
+                    </h3>
+                </div>
                     <div class="text-center">
                     
-                    <a href="reserve.html"><button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-credit-card"></i> Make Reservation</button></a>
-                    <a href="index.html"><button><i class="glyphicon glyphicon-home">    </i>     </button></a>
+                    <a role="button" class="btn btn-danger" href="./reserve.html">
+                        <button class="btn btn-danger">
+                                <i class="fa fa-credit-card"></i>
+                                Make Reservation
+                        </button>
+                    </a>
+                    <a role="button" href="./index.html"> 
+                        <button class="btn">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Home
+                        </button>
+                    </a>
                     </div>
                 </div>
-            </div>
+        </div>
+        <div class="container">
+                <div class="card">
+                <div class="card-header">
+                    Current Reservations
+                </div>
+                <div class="card-body">Test</div>
+                </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Waiting List
+                        </div>
+                        <div class="card-body">TEsts</div>
+                    </div>
+    
+        </div>        
             <ul > 
                 <li style=" Display:inline-flex;"> <a>Clear Table</a></li>   
                <li style=" Display:inline-flex;"> <a href="api/data">API Table Link</a></li>
