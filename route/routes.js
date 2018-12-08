@@ -29,6 +29,9 @@ module.exports = function(app){
     });
 
   app.post("/api/data", function (req, res) {
-      console.log(req.body)    
+
+    console.log(reservations)
+    reservations.push(req.body)
+    console.log("New DAtA", reservations)
   } )
 };
