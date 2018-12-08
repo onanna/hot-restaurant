@@ -16,7 +16,8 @@ module.exports = function(app){
         res.sendFile(path.join(__dirname,"/../table.html"));
         // console.log(__dirname)
       });
-
+      app.get("/index.html", function (req, res) {
+        res.sendFile(path.join(__dirname + '/../index.html'));
   //a USE route to home page
   app.get("/", function (req, res) {
       res.sendFile(path.join(__dirname + '/../index.html'));
