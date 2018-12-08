@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Path to the htmlRoutes.js
-require("/route/routes.js")(app);
+require("./route/routes.js")(app);
 
 
 // Starts the server to begin listening

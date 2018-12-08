@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/onanna/hot-restaurant/issues"
   },
-  "homepage": "https://github.com/onanna/hot-restaurant#readme"
+  "homepage": "https://github.com/onanna/hot-restaurant#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
 }
